@@ -1,9 +1,12 @@
-# Insert blank line between shell prompts
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
 add_newline = true
 
 [character]
-success_symbol = "[>](bold green)"
-error_symbol = "[x](bold red)"
+success_symbol = "[->](bold green)"
+error_symbol = "[err](bold red) [->](bold green)"
 vimcmd_symbol = "[<](bold green)"
 
 [git_commit]
